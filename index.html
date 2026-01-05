@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LuxeHaven - Luxury serviced apartments offering comfort, elegance, and exceptional service. Book your perfect stay today.">
+    <meta name="keywords" content="luxury apartments, serviced apartments, vacation rentals, luxury accommodation">
+    <meta name="author" content="LuxeHaven">
+    <title>LuxeHaven - Luxury Serviced Apartments</title>
+    <link rel="icon" type="image/png" href="images/luxelogo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="index.html" class="logo">
+                        <img src="images/luxelogo.png" alt="LuxeHaven Logo" class="logo-img">
+                        <span class="logo-text">LuxeHaven</span>
+                    </a>
+                    <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu">
+                        <li><a href="index.html" class="nav-link active">Home</a></li>
+                        <li><a href="apartments.html" class="nav-link">Apartments</a></li>
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li><a href="contact.html" class="nav-link cta-nav">Book Now</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="hero-title">Experience Luxury Living</h1>
+                <p class="hero-tagline">Elegant serviced apartments designed for comfort, style, and unforgettable stays</p>
+                <div class="hero-cta">
+                    <a href="apartments.html" class="btn btn-primary">View Apartments</a>
+                    <a href="contact.html" class="btn btn-secondary">Book Your Stay</a>
+                </div>
+                <div class="hero-highlight">
+                    <span class="highlight-text">📍 Prime Location</span>
+                    <span class="highlight-text">✨ Fully Furnished</span>
+                    <span class="highlight-text">🏆 5-Star Rated</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Featured Apartments Section -->
+    <section class="featured-apartments section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Apartments</h2>
+                <p class="section-subtitle">Discover our handpicked selection of luxury accommodations</p>
+            </div>
+            <div class="apartments-grid" id="featuredApartments">
+                <!-- Apartments will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview Section -->
+    <section class="services-overview section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Everything you need for a perfect stay</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🧹</div>
+                    <h3 class="service-title">Housekeeping</h3>
+                    <p class="service-description">Regular cleaning and maintenance to keep your space pristine</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📶</div>
+                    <h3 class="service-title">Free Wi-Fi</h3>
+                    <p class="service-description">High-speed internet connection throughout your stay</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✈️</div>
+                    <h3 class="service-title">Airport Pickup</h3>
+                    <p class="service-description">Complimentary airport transfer service available</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔒</div>
+                    <h3 class="service-title">24/7 Security</h3>
+                    <p class="service-description">Round-the-clock security for your peace of mind</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🅿️</div>
+                    <h3 class="service-title">Parking</h3>
+                    <p class="service-description">Secure parking facilities for your vehicle</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🍳</div>
+                    <h3 class="service-title">Fully Equipped Kitchen</h3>
+                    <p class="service-description">Modern kitchen with all appliances and utensils</p>
+                </div>
+            </div>
+            <div class="services-cta">
+                <a href="services.html" class="btn btn-outline">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Guest Reviews</h2>
+                <p class="section-subtitle">What our guests say about their stay</p>
+            </div>
+            <div class="testimonials-slider" id="testimonialsSlider">
+                <div class="testimonial-track">
+                    <!-- Testimonials will be loaded dynamically -->
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-btn prev" aria-label="Previous testimonial">
+                    <span>‹</span>
+                </button>
+                <div class="slider-dots"></div>
+                <button class="slider-btn next" aria-label="Next testimonial">
+                    <span>›</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Team</h2>
+                <p class="section-subtitle">Meet the people behind LuxeHaven</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-image">
+                        <div class="team-placeholder">👤</div>
+                    </div>
+                    <h3 class="team-name">Sarah Johnson</h3>
+                    <p class="team-role">General Manager</p>
+                    <p class="team-description">With over 10 years in hospitality, Sarah ensures every guest receives exceptional service.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">
+                        <div class="team-placeholder">👤</div>
+                    </div>
+                    <h3 class="team-name">Michael Chen</h3>
+                    <p class="team-role">Interior Designer</p>
+                    <p class="team-description">Michael's expertise in luxury design creates spaces that blend comfort with elegance.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">
+                        <div class="team-placeholder">👤</div>
+                    </div>
+                    <h3 class="team-name">Emma Williams</h3>
+                    <p class="team-role">Guest Relations</p>
+                    <p class="team-description">Emma is dedicated to making every stay memorable and addressing guest needs promptly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">LuxeHaven</h3>
+                    <p class="footer-description">Luxury serviced apartments offering comfort, elegance, and exceptional service for discerning travelers.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="apartments.html">Apartments</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-contact">
+                        <li>📧 luxehavenbnb@gmail.com</li>
+                        <li>📞 +254 700 000 000</li>
+                        <li>📍 Kirichwa Road, Kilimani</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LuxeHaven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Apartment Modal -->
+    <div class="modal" id="apartmentModal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Modal content will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

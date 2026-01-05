@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our collection of luxury serviced apartments. Filter by price, size, and capacity to find your perfect accommodation.">
+    <meta name="keywords" content="luxury apartments, apartment gallery, serviced apartments, vacation rentals">
+    <title>Apartments - LuxeHaven</title>
+    <link rel="icon" type="image/png" href="images/luxelogo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="index.html" class="logo">
+                        <img src="images/luxelogo.png" alt="LuxeHaven Logo" class="logo-img">
+                        <span class="logo-text">LuxeHaven</span>
+                    </a>
+                    <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="apartments.html" class="nav-link active">Apartments</a></li>
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li><a href="contact.html" class="nav-link cta-nav">Book Now</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Our Apartments</h1>
+            <p class="page-subtitle">Discover your perfect luxury accommodation</p>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="filters-section section-padding bg-light">
+        <div class="container">
+            <div class="filters-wrapper">
+                <h2 class="filters-title">Filter Apartments</h2>
+                <div class="filters-grid">
+                    <div class="filter-group">
+                        <label for="priceFilter">Price Range</label>
+                        <select id="priceFilter" class="filter-select">
+                            <option value="all">All Prices</option>
+                            <option value="low">KES 13,000 - KES 26,000</option>
+                            <option value="medium">KES 26,000 - KES 52,000</option>
+                            <option value="high">KES 52,000+</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="sizeFilter">Size</label>
+                        <select id="sizeFilter" class="filter-select">
+                            <option value="all">All Sizes</option>
+                            <option value="studio">Studio</option>
+                            <option value="1br">1 Bedroom</option>
+                            <option value="2br">2 Bedrooms</option>
+                            <option value="3br">3+ Bedrooms</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="guestsFilter">Number of Guests</label>
+                        <select id="guestsFilter" class="filter-select">
+                            <option value="all">All</option>
+                            <option value="1-2">1-2 Guests</option>
+                            <option value="3-4">3-4 Guests</option>
+                            <option value="5+">5+ Guests</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <button class="btn btn-outline" id="resetFilters">Reset Filters</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apartments Gallery -->
+    <section class="apartments-gallery section-padding">
+        <div class="container">
+            <div class="gallery-header">
+                <p class="results-count" id="resultsCount">Showing all apartments</p>
+            </div>
+            <div class="apartments-grid" id="apartmentsGrid">
+                <!-- Apartments will be loaded dynamically -->
+            </div>
+            <div class="no-results" id="noResults" style="display: none;">
+                <p>No apartments match your filters. Please try different criteria.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">LuxeHaven</h3>
+                    <p class="footer-description">Luxury serviced apartments offering comfort, elegance, and exceptional service for discerning travelers.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="apartments.html">Apartments</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-contact">
+                        <li>📧 luxehavenbnb@gmail.com</li>
+                        <li>📞 +254 700 000 000</li>
+                        <li>📍 Kirichwa Road, Kilimani</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LuxeHaven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Apartment Modal -->
+    <div class="modal" id="apartmentModal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Modal content will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/filters.js"></script>
+</body>
+</html>

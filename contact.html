@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact LuxeHaven. Get in touch for bookings, inquiries, or any questions about our luxury serviced apartments.">
+    <meta name="keywords" content="contact, booking, inquiry, luxury apartments">
+    <title>Contact - LuxeHaven</title>
+    <link rel="icon" type="image/png" href="images/luxelogo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="index.html" class="logo">
+                        <img src="images/luxelogo.png" alt="LuxeHaven Logo" class="logo-img">
+                        <span class="logo-text">LuxeHaven</span>
+                    </a>
+                    <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="apartments.html" class="nav-link">Apartments</a></li>
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                        <li><a href="contact.html" class="nav-link cta-nav">Book Now</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Contact Us</h1>
+            <p class="page-subtitle">We're here to help make your stay perfect</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section section-padding">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2 class="contact-form-title">Send us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="apartment">Apartment Selection</label>
+                            <select id="apartment" name="apartment">
+                                <option value="">Select an apartment (optional)</option>
+                                <option value="studio-deluxe">Studio Deluxe</option>
+                                <option value="one-bedroom-luxury">One Bedroom Luxury</option>
+                                <option value="two-bedroom-premium">Two Bedroom Premium</option>
+                                <option value="three-bedroom-penthouse">Three Bedroom Penthouse</option>
+                                <option value="not-sure">Not Sure Yet</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <div class="form-message" id="formMessage"></div>
+                </div>
+
+                <!-- Contact Details -->
+                <div class="contact-details-wrapper">
+                    <h2 class="contact-details-title">Get in Touch</h2>
+                    <div class="contact-info">
+                        <div class="contact-info-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-info-content">
+                                <h3>Email</h3>
+                                <p><a href="mailto:luxehavenbnb@gmail.com">luxehavenbnb@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-info-content">
+                                <h3>Phone</h3>
+                                <p><a href="tel:+254700000000">+254 700 000 000</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-info-content">
+                                <h3>Address</h3>
+                                <p>Kirichwa Road<br>Kilimani<br>Nairobi, Kenya</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">🕒</div>
+                            <div class="contact-info-content">
+                                <h3>Operating Hours</h3>
+                                <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick CTAs -->
+                    <div class="quick-ctas">
+                        <h3 class="quick-ctas-title">Quick Actions</h3>
+                        <div class="quick-cta-buttons">
+                            <a href="https://wa.me/254700000000" class="btn btn-whatsapp" target="_blank" rel="noopener">
+                                💬 WhatsApp Chat
+                            </a>
+                            <a href="tel:+254700000000" class="btn btn-call">
+                                📞 Call Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="map-container">
+            <div class="map-placeholder">
+                <div class="map-content">
+                    <span class="map-icon">🗺️</span>
+                    <h3>Our Location</h3>
+                    <p>Kirichwa Road, Kilimani, Nairobi</p>
+                    <p class="map-note">Click below to view on Google Maps</p>
+                    <a href="https://www.google.com/maps/search/Kirichwa+Road,+Kilimani,+Nairobi" class="btn btn-outline" target="_blank" rel="noopener">View on Google Maps</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">LuxeHaven</h3>
+                    <p class="footer-description">Luxury serviced apartments offering comfort, elegance, and exceptional service for discerning travelers.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="apartments.html">Apartments</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-contact">
+                        <li>📧 luxehavenbnb@gmail.com</li>
+                        <li>📞 +254 700 000 000</li>
+                        <li>📍 Kirichwa Road, Kilimani</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LuxeHaven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
