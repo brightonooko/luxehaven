@@ -32,14 +32,13 @@ A modern, responsive website for luxury serviced apartments featuring elegant de
   - Amenities list
   - Capacity details
   - Pricing information
-  - CTA buttons (Book Now, Enquire, View on Airbnb)
+  - CTA buttons (Book Now, Enquire)
 
 ### Services Page
 - ✅ Detailed breakdown of services
 - ✅ Categorized layout:
   - In-Apartment Services
   - Property Services
-  - Optional Add-Ons
 - ✅ Visual icons and clear explanations
 
 ### Design Process Page
@@ -51,7 +50,7 @@ A modern, responsive website for luxury serviced apartments featuring elegant de
 - ✅ Contact form with validation
 - ✅ Location & contact details
 - ✅ Google Maps placeholder (ready for integration)
-- ✅ Quick CTAs (WhatsApp, Call, Airbnb)
+- ✅ Quick CTAs (WhatsApp, Call)
 
 ## File Structure
 
@@ -177,5 +176,5 @@ This project is created for LuxeHaven. All rights reserved.
 ## Contact
 
 For questions or support, please contact:
-- Email: info@luxehaven.com
-- Phone: +1 (555) 123-4567
+- Email: luxehaven@gmail.com
+- Phone: +254 700 000 000
