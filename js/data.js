@@ -197,7 +197,7 @@ const testimonials = [
         location: "Nairobi, Kenya",
         rating: 5,
         text: "Absolutely stunning apartment! The attention to detail and luxury amenities made our stay unforgettable. Highly recommend!",
-        platform: "Airbnb"
+        platform: "Direct Booking"
     },
     {
         id: 2,
@@ -205,7 +205,7 @@ const testimonials = [
         location: "Nairobi, Kenya",
         rating: 5,
         text: "Perfect location, beautiful design, and exceptional service. This is how luxury accommodation should be done.",
-        platform: "Booking.com"
+        platform: "Direct Booking"
     },
     {
         id: 3,
@@ -213,7 +213,7 @@ const testimonials = [
         location: "Nairobi, Kenya",
         rating: 5,
         text: "We stayed for a month and felt right at home. The fully equipped kitchen and housekeeping service were fantastic.",
-        platform: "Airbnb"
+        platform: "Direct Booking"
     },
     {
         id: 4,
@@ -229,7 +229,7 @@ const testimonials = [
         location: "Nairobi, Kenya",
         rating: 5,
         text: "Beautiful apartment with modern design. The team was very responsive and helpful throughout our stay. Highly recommended!",
-        platform: "Airbnb"
+        platform: "Direct Booking"
     }
 ];
 
