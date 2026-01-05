@@ -194,39 +194,39 @@ const testimonials = [
     {
         id: 1,
         name: "Sarah Mitchell",
-        location: "United States",
+        location: "Nairobi, Kenya",
         rating: 5,
         text: "Absolutely stunning apartment! The attention to detail and luxury amenities made our stay unforgettable. Highly recommend!",
         platform: "Airbnb"
     },
     {
         id: 2,
-        name: "James Chen",
-        location: "Singapore",
+        name: "James Ochieng",
+        location: "Nairobi, Kenya",
         rating: 5,
         text: "Perfect location, beautiful design, and exceptional service. This is how luxury accommodation should be done.",
         platform: "Booking.com"
     },
     {
         id: 3,
-        name: "Emma Rodriguez",
-        location: "Spain",
+        name: "Emma Karanja",
+        location: "Nairobi, Kenya",
         rating: 5,
         text: "We stayed for a month and felt right at home. The fully equipped kitchen and housekeeping service were fantastic.",
         platform: "Airbnb"
     },
     {
         id: 4,
-        name: "Michael Thompson",
-        location: "United Kingdom",
+        name: "Michael Thomas",
+        location: "Nairobi, Kenya",
         rating: 5,
         text: "The penthouse exceeded all expectations. The views are breathtaking and the amenities are top-notch. Will definitely return!",
         platform: "Direct Booking"
     },
     {
         id: 5,
-        name: "Lisa Wang",
-        location: "China",
+        name: "Lisa Wangui",
+        location: "Nairobi, Kenya",
         rating: 5,
         text: "Beautiful apartment with modern design. The team was very responsive and helpful throughout our stay. Highly recommended!",
         platform: "Airbnb"
