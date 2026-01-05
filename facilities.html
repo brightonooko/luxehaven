@@ -3,12 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Browse our collection of luxury serviced apartments. Filter by price, size, and capacity to find your perfect accommodation.">
-    <meta name="keywords" content="luxury apartments, apartment gallery, serviced apartments, vacation rentals">
-    <title>Apartments - LuxeHaven</title>
+    <meta name="description" content="Explore our luxury facilities including bedroom units and transport services. Find your perfect accommodation and amenities.">
+    <meta name="keywords" content="luxury facilities, accommodation, serviced apartments, vacation rentals">
+    <title>Facilities - LuxeHaven</title>
     <link rel="icon" type="image/png" href="images/luxelogo.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        /* Accommodation section - 2 column layout */
+        #apartmentsGrid {
+            grid-template-columns: repeat(2, 1fr) !important;
+        }
+        
+        /* Other facilities - same size as accommodation */
+        .facilities-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr) !important;
+            gap: 30px;
+        }
+        
+        .facilities-grid .apartment-card,
+        #apartmentsGrid .apartment-card {
+            height: 100%;
+        }
+        
+        /* Responsive for tablets and below */
+        @media (max-width: 768px) {
+            #apartmentsGrid,
+            .facilities-grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -27,7 +53,7 @@
                     </button>
                     <ul class="nav-menu">
                         <li><a href="index.html" class="nav-link">Home</a></li>
-                        <li><a href="apartments.html" class="nav-link active">Apartments</a></li>
+                        <li><a href="facilities.html" class="nav-link active">Facilities</a></li>
                         <li><a href="services.html" class="nav-link">Services</a></li>
                         <li><a href="contact.html" class="nav-link">Contact</a></li>
                         <li><a href="contact.html" class="nav-link cta-nav">Book Now</a></li>
@@ -40,8 +66,8 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1 class="page-title">Our Apartments</h1>
-            <p class="page-subtitle">Discover your perfect luxury accommodation</p>
+            <h1 class="page-title">Our Facilities</h1>
+            <p class="page-subtitle">Discover our luxury accommodation units and facilities</p>
         </div>
     </section>
 
@@ -49,7 +75,7 @@
     <section class="filters-section section-padding bg-light">
         <div class="container">
             <div class="filters-wrapper">
-                <h2 class="filters-title">Filter Apartments</h2>
+                <h2 class="filters-title">Filter Facilities</h2>
                 <div class="filters-grid">
                     <div class="filter-group">
                         <label for="priceFilter">Price Range</label>
@@ -64,19 +90,8 @@
                         <label for="sizeFilter">Size</label>
                         <select id="sizeFilter" class="filter-select">
                             <option value="all">All Sizes</option>
-                            <option value="studio">Studio</option>
                             <option value="1br">1 Bedroom</option>
                             <option value="2br">2 Bedrooms</option>
-                            <option value="3br">3+ Bedrooms</option>
-                        </select>
-                    </div>
-                    <div class="filter-group">
-                        <label for="guestsFilter">Number of Guests</label>
-                        <select id="guestsFilter" class="filter-select">
-                            <option value="all">All</option>
-                            <option value="1-2">1-2 Guests</option>
-                            <option value="3-4">3-4 Guests</option>
-                            <option value="5+">5+ Guests</option>
                         </select>
                     </div>
                     <div class="filter-group">
@@ -87,17 +102,31 @@
         </div>
     </section>
 
-    <!-- Apartments Gallery -->
+    <!-- Facilities Gallery -->
     <section class="apartments-gallery section-padding">
         <div class="container">
             <div class="gallery-header">
-                <p class="results-count" id="resultsCount">Showing all apartments</p>
+                <h2 style="margin-bottom: 30px; font-size: 28px;">Our Accommodation</h2>
+                <p class="results-count" id="resultsCount">Showing all facilities</p>
             </div>
             <div class="apartments-grid" id="apartmentsGrid">
                 <!-- Apartments will be loaded dynamically -->
             </div>
             <div class="no-results" id="noResults" style="display: none;">
-                <p>No apartments match your filters. Please try different criteria.</p>
+                <p>No facilities match your filters. Please try different criteria.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Facilities Section -->
+    <section class="facilities-section section-padding bg-light">
+        <div class="container">
+            <div class="gallery-header">
+                <h2 style="margin-bottom: 30px; font-size: 28px;">Other Facilities</h2>
+                <p style="color: #666; font-size: 16px;">Enhance your stay with our premium amenities</p>
+            </div>
+            <div class="facilities-grid" id="facilitiesGrid">
+                <!-- Additional facilities will be loaded dynamically -->
             </div>
         </div>
     </section>
@@ -114,7 +143,7 @@
                     <h4 class="footer-title">Quick Links</h4>
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="apartments.html">Apartments</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
@@ -123,7 +152,7 @@
                     <h4 class="footer-title">Contact</h4>
                     <ul class="footer-contact">
                         <li>📧 luxehavenbnb@gmail.com</li>
-                        <li>📞 +254 700 000 000</li>
+                        <li>📞 +254 743 742 200</li>
                         <li>📍 Kirichwa Road, Kilimani</li>
                     </ul>
                 </div>
@@ -135,6 +164,12 @@
                         <li><a href="#">Cancellation Policy</a></li>
                     </ul>
                 </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Follow Us</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://www.instagram.com/luxehaven_apartments?igsh=a2sycHkxa3FlbXI5" target="_blank" rel="noopener">📷 Instagram</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2024 LuxeHaven. All rights reserved.</p>
@@ -142,7 +177,7 @@
         </div>
     </footer>
 
-    <!-- Apartment Modal -->
+    <!-- Apartment/Facility Modal -->
     <div class="modal" id="apartmentModal">
         <div class="modal-content">
             <button class="modal-close" aria-label="Close modal">&times;</button>
@@ -155,5 +190,6 @@
     <script src="js/data.js"></script>
     <script src="js/main.js"></script>
     <script src="js/filters.js"></script>
+    <script src="js/facilities.js"></script>
 </body>
 </html>

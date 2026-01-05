@@ -10,6 +10,19 @@
     <link rel="icon" type="image/png" href="images/luxelogo.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        /* Featured apartments - 2 column layout */
+        .featured-apartments .apartments-grid {
+            grid-template-columns: repeat(2, 1fr) !important;
+        }
+        
+        /* Responsive for tablets and below */
+        @media (max-width: 768px) {
+            .featured-apartments .apartments-grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -28,7 +41,7 @@
                     </button>
                     <ul class="nav-menu">
                         <li><a href="index.html" class="nav-link active">Home</a></li>
-                        <li><a href="apartments.html" class="nav-link">Apartments</a></li>
+                        <li><a href="facilities.html" class="nav-link">Facilities</a></li>
                         <li><a href="services.html" class="nav-link">Services</a></li>
                         <li><a href="contact.html" class="nav-link">Contact</a></li>
                         <li><a href="contact.html" class="nav-link cta-nav">Book Now</a></li>
@@ -48,7 +61,7 @@
                 <h1 class="hero-title">Experience Luxury Living</h1>
                 <p class="hero-tagline">Elegant serviced apartments designed for comfort, style, and unforgettable stays</p>
                 <div class="hero-cta">
-                    <a href="apartments.html" class="btn btn-primary">View Apartments</a>
+                    <a href="facilities.html" class="btn btn-primary">View Apartments</a>
                     <a href="contact.html" class="btn btn-secondary">Book Your Stay</a>
                 </div>
                 <div class="hero-highlight">
@@ -151,27 +164,35 @@
             <div class="team-grid">
                 <div class="team-card">
                     <div class="team-image">
-                        <div class="team-placeholder">👤</div>
+                        <img src="images/henry.jpg" alt="Ben Henry" class="team-photo">
                     </div>
-                    <h3 class="team-name">Brian Abuga</h3>
+                    <h3 class="team-name">Ben Henry</h3>
                     <p class="team-role">General Manager</p>
-                    <p class="team-description">Brian ensures every guest receives exceptional service.</p>
+                    <p class="team-description">Ben ensures every guest receives exceptional service.</p>
                 </div>
                 <div class="team-card">
                     <div class="team-image">
-                        <div class="team-placeholder">👤</div>
+                        <img src="images/henry.jpg" alt="Sharon Mwende" class="team-photo">
                     </div>
-                    <h3 class="team-name">Michael Ochieng</h3>
+                    <h3 class="team-name">Sharon Mwende</h3>
+                    <p class="team-role">Manager</p>
+                    <p class="team-description">Sharon oversees operations and ensures smooth management of all facilities.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="images/henry.jpg" alt="Ben Henry Designer" class="team-photo">
+                    </div>
+                    <h3 class="team-name">Ben Henry</h3>
                     <p class="team-role">Interior Designer</p>
-                    <p class="team-description">Michael's expertise in luxury design creates spaces that blend comfort with elegance.</p>
+                    <p class="team-description">Ben's expertise in luxury design creates spaces that blend comfort with elegance.</p>
                 </div>
                 <div class="team-card">
                     <div class="team-image">
-                        <div class="team-placeholder">👤</div>
+                        <img src="images/henry.jpg" alt="Lynn Katoni" class="team-photo">
                     </div>
-                    <h3 class="team-name">Emma Gathoni</h3>
-                    <p class="team-role">Guest Relations</p>
-                    <p class="team-description">Emma is dedicated to making every stay memorable and addressing guest needs promptly.</p>
+                    <h3 class="team-name">Lynn Katoni</h3>
+                    <p class="team-role">Assistant Manager</p>
+                    <p class="team-description">Lynn is dedicated to making every stay memorable and addressing guest needs promptly.</p>
                 </div>
             </div>
         </div>
@@ -189,7 +210,7 @@
                     <h4 class="footer-title">Quick Links</h4>
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="apartments.html">Apartments</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
@@ -198,7 +219,7 @@
                     <h4 class="footer-title">Contact</h4>
                     <ul class="footer-contact">
                         <li>📧 luxehavenbnb@gmail.com</li>
-                        <li>📞 +254 700 000 000</li>
+                        <li>📞 +254 743 742 200</li>
                         <li>📍 Kirichwa Road, Kilimani</li>
                     </ul>
                 </div>
@@ -208,6 +229,12 @@
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Terms of Service</a></li>
                         <li><a href="#">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Follow Us</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://www.instagram.com/luxehaven_apartments?igsh=a2sycHkxa3FlbXI5" target="_blank" rel="noopener">📷 Instagram</a></li>
                     </ul>
                 </div>
             </div>

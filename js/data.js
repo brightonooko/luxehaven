@@ -2,34 +2,6 @@
 const apartments = [
     {
         id: 1,
-        name: "Studio Deluxe",
-        description: "Elegant studio apartment perfect for solo travelers or couples. Features modern amenities and stunning city views.",
-        image: "images/apartments/studio-deluxe/1.jpg",
-        images: [
-            "images/apartments/studio-deluxe/1.jpg",
-            "images/apartments/studio-deluxe/2.jpg",
-            "images/apartments/studio-deluxe/3.jpg"
-        ],
-        features: ["Wi-Fi", "Kitchen", "City View", "1 Bed"],
-        beds: 1,
-        baths: 1,
-        guests: 2,
-        size: "studio",
-        price: 19500,
-        priceRange: "low",
-        currency: "KES",
-        amenities: [
-            "Free Wi-Fi",
-            "Fully Equipped Kitchen",
-            "Smart TV",
-            "Air Conditioning",
-            "City View",
-            "Housekeeping",
-            "24/7 Security"
-        ]
-    },
-    {
-        id: 2,
         name: "One Bedroom Luxury",
         description: "Spacious one-bedroom apartment with separate living area. Ideal for extended stays with premium furnishings.",
         image: "images/apartments/one-bedroom-luxury/1.jpg",
@@ -60,7 +32,7 @@ const apartments = [
         ]
     },
     {
-        id: 3,
+        id: 2,
         name: "Two Bedroom Premium",
         description: "Luxurious two-bedroom apartment perfect for families or groups. Features premium amenities and elegant design.",
         image: "images/apartments/two-bedroom-premium/1.jpg",
@@ -92,99 +64,75 @@ const apartments = [
             "Parking Available",
             "Fitness Center Access"
         ]
-    },
+    }
+];
+
+// Facilities Data (Additional amenities beyond apartments)
+const facilities = [
     {
-        id: 4,
-        name: "Three Bedroom Penthouse",
-        description: "Ultra-luxurious penthouse with panoramic views. The ultimate in luxury living with premium finishes throughout.",
-        image: "images/apartments/three-bedroom-penthouse/1.jpg",
+        id: 101,
+        name: "Transport Services",
+        description: "Professional transport and vehicle services to meet all your mobility needs.",
+        image: "images/transport/vehicle-2.JPG",
         images: [
-            "images/apartments/three-bedroom-penthouse/1.jpg",
-            "images/apartments/three-bedroom-penthouse/2.jpg",
-            "images/apartments/three-bedroom-penthouse/3.jpg",
-            "images/apartments/three-bedroom-penthouse/4.jpg",
-            "images/apartments/three-bedroom-penthouse/5.jpg",
-            "images/apartments/three-bedroom-penthouse/6.jpg"
+            "images/transport/vehicle-1.jpg",
+            "images/transport/vehicle-2.JPG",
+            "images/transport/vehicle-3.jpg"
         ],
-        features: ["Wi-Fi", "Kitchen", "Terrace", "2 Beds"],
-        beds: 3,
-        baths: 3,
-        guests: 6,
-        size: "3br",
-        price: 71500,
-        priceRange: "high",
-        currency: "KES",
+        features: ["Airport Transfer", "Car Rental", "Chauffeur Service", "24/7 Available"],
+        type: "transport",
         amenities: [
-            "Free Wi-Fi",
-            "Fully Equipped Kitchen",
-            "Smart TV",
-            "Air Conditioning",
-            "Private Terrace",
-            "Washer/Dryer",
-            "Dining Area",
-            "Home Office",
-            "Housekeeping",
-            "24/7 Security",
-            "Parking Available",
-            "Fitness Center Access",
-            "Concierge Service",
-            "Premium Views"
+            "Airport pickup and drop-off",
+            "Car rental arrangements",
+            "Chauffeur service available",
+            "Vehicle maintenance assistance",
+            "Flexible booking",
+            "Professional drivers"
         ]
     },
     {
-        id: 5,
-        name: "Cozy Studio",
-        description: "Charming studio apartment with modern amenities. Perfect for budget-conscious travelers seeking comfort.",
-        image: "images/apartments/cozy-studio/1.jpg",
+        id: 102,
+        name: "In-House Restaurant",
+        description: "Fine dining experience with a diverse menu right within our property. Room service also available.",
+        image: "images/rest4.jpg",
         images: [
-            "images/apartments/cozy-studio/1.jpg",
-            "images/apartments/cozy-studio/2.jpg"
+            "images/rest1.jpg",
+            "images/rest2.jpg",
+            "images/rest3.jpg",
+            "images/rest4.jpg"
         ],
-        features: ["Wi-Fi", "Kitchen", "1 Bed"],
-        beds: 1,
-        baths: 1,
-        guests: 2,
-        size: "studio",
-        price: 15600,
-        priceRange: "low",
-        currency: "KES",
+        features: ["Fine Dining", "Room Service", "Catering", "Diverse Menu"],
+        type: "restaurant",
         amenities: [
-            "Free Wi-Fi",
-            "Kitchenette",
-            "Smart TV",
-            "Air Conditioning",
-            "Housekeeping",
-            "24/7 Security"
+            "In-house restaurant with diverse menu",
+            "Room service dining",
+            "Catering for events",
+            "Special dietary accommodations",
+            "International and local cuisine",
+            "Professional chefs"
         ]
     },
     {
-        id: 6,
-        name: "Executive Suite",
-        description: "Sophisticated one-bedroom suite designed for business travelers. Features dedicated workspace and premium amenities.",
-        image: "images/apartments/executive-suite/1.jpg",
+        id: 103,
+        name: "Fitness Center & Gym",
+        description: "State-of-the-art fitness facilities with modern equipment to maintain your workout routine.",
+        image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80",
         images: [
-            "images/apartments/executive-suite/1.jpg",
-            "images/apartments/executive-suite/2.jpg",
-            "images/apartments/executive-suite/3.jpg"
+            "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80",
+            "https://images.unsplash.com/photo-1517836357463-d25ddfcbf042?w=800&q=80",
+            "https://images.unsplash.com/photo-1541534411736-46326ad8e071?w=800&q=80"
         ],
-        features: ["Wi-Fi", "Kitchen", "Office", "2 Beds"],
-        beds: 1,
-        baths: 1,
-        guests: 2,
-        size: "1br",
-        price: 36400,
-        priceRange: "medium",
-        currency: "KES",
+        features: ["Modern Equipment", "Personal Training", "Yoga Studio", "24/7 Access"],
+        type: "gym",
         amenities: [
-            "Free Wi-Fi",
-            "Fully Equipped Kitchen",
-            "Smart TV",
-            "Air Conditioning",
-            "Home Office",
-            "High-Speed Internet",
-            "Housekeeping",
-            "24/7 Security",
-            "Business Services"
+            "Modern exercise equipment",
+            "Cardio machines",
+            "Free weights and dumbbells",
+            "Yoga studio",
+            "Personal training available",
+            "Sauna and steam room",
+            "24/7 gym access",
+            "Professional trainers"
         ]
     }
 ];
@@ -220,7 +168,7 @@ const testimonials = [
         name: "Michael Thomas",
         location: "Nairobi, Kenya",
         rating: 5,
-        text: "The penthouse exceeded all expectations. The views are breathtaking and the amenities are top-notch. Will definitely return!",
+        text: "The views are breathtaking and the amenities are top-notch. Will definitely return!",
         platform: "Direct Booking"
     },
     {
@@ -251,4 +199,20 @@ function getApartmentById(id) {
 // Helper function to get all testimonials
 function getAllTestimonials() {
     return testimonials;
+}
+// Helper function to get all facilities
+function getAllFacilities() {
+    return facilities;
+}
+
+// Helper function to get facility by ID
+function getFacilityById(id) {
+    return facilities.find(fac => fac.id === id);
+}
+
+// Helper function to get random image from a facility
+function getRandomFacilityImage(id) {
+    const facility = getFacilityById(id);
+    if (!facility || !facility.images || facility.images.length === 0) return null;
+    return facility.images[Math.floor(Math.random() * facility.images.length)];
 }
