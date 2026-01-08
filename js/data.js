@@ -11,7 +11,7 @@ const apartments = [
             "images/apartments/one-bedroom-luxury/3.jpg",
             "images/apartments/one-bedroom-luxury/4.jpg"
         ],
-        features: ["Wi-Fi", "Kitchen", "Balcony", "2 Beds"],
+        features: ["Wi-Fi", "Kitchen", "Balcony", "1 Bed"],
         beds: 1,
         baths: 1,
         guests: 3,
@@ -77,7 +77,11 @@ const facilities = [
         images: [
             "images/transport/vehicle-1.jpg",
             "images/transport/vehicle-2.JPG",
-            "images/transport/vehicle-3.jpg"
+            "images/transport/vehicle-3.jpg",
+            "images/transport/vehicle-4.jpeg",
+            "images/transport/vehicle-5.jpeg",
+            "images/transport/vehicle-6.jpeg",
+            "images/transport/vehicle-7.jpeg"
         ],
         features: ["Airport Transfer", "Car Rental", "Chauffeur Service", "24/7 Available"],
         type: "transport",
@@ -116,11 +120,10 @@ const facilities = [
         id: 103,
         name: "Fitness Center & Gym",
         description: "State-of-the-art fitness facilities with modern equipment to maintain your workout routine.",
-        image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80",
+        image: "images/gym2.jpg",
         images: [
-            "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80",
-            "https://images.unsplash.com/photo-1517836357463-d25ddfcbf042?w=800&q=80",
-            "https://images.unsplash.com/photo-1541534411736-46326ad8e071?w=800&q=80"
+            "images/gym1.jpg",
+            "images/gym2.jpg"
         ],
         features: ["Modern Equipment", "Personal Training", "Yoga Studio", "24/7 Access"],
         type: "gym",
@@ -142,7 +145,7 @@ const testimonials = [
     {
         id: 1,
         name: "Sarah Mitchell",
-        location: "Nairobi, Kenya",
+        location: "New York, USA",
         rating: 5,
         text: "Absolutely stunning apartment! The attention to detail and luxury amenities made our stay unforgettable. Highly recommend!",
         platform: "Direct Booking"
@@ -158,7 +161,7 @@ const testimonials = [
     {
         id: 3,
         name: "Emma Karanja",
-        location: "Nairobi, Kenya",
+        location: "Queensland, Australia",
         rating: 5,
         text: "We stayed for a month and felt right at home. The fully equipped kitchen and housekeeping service were fantastic.",
         platform: "Direct Booking"
@@ -166,7 +169,7 @@ const testimonials = [
     {
         id: 4,
         name: "Michael Thomas",
-        location: "Nairobi, Kenya",
+        location: "Netherlands, Europe",
         rating: 5,
         text: "The views are breathtaking and the amenities are top-notch. Will definitely return!",
         platform: "Direct Booking"

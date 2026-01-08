@@ -688,6 +688,21 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: var(--spacing-sm);
 }
 
+.team-contact {
+    margin-top: -0.25rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.team-phone {
+    font-weight: 700;
+    color: var(--text-dark);
+    text-decoration: none;
+}
+
+.team-phone:hover {
+    color: var(--accent-color);
+}
+
 .team-description {
     color: var(--text-light);
     font-size: 0.95rem;
