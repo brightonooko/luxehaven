@@ -46,25 +46,72 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
         
-        // Show loading state
+        // Prepare loading state
         const submitBtn = contactForm.querySelector('button[type="submit"]');
         const originalText = submitBtn.textContent;
         submitBtn.textContent = 'Sending...';
         submitBtn.disabled = true;
         
-        // Simulate form submission (replace with actual API call)
-        setTimeout(() => {
-            // Success
-            showFormMessage('success', 'Thank you! Your message has been sent successfully. We will get back to you soon.');
-            contactForm.reset();
+        // EmailJS config and send
+        const cfg = window.EMAILJS_CONFIG;
+        if (cfg && window.emailjs) {
+            try {
+                window.emailjs.init(cfg.publicKey);
+            } catch (initErr) {
+                // If init fails, fallback to mailto
+            }
+            const templateParams = {
+                name: formData.name,
+                email: formData.email,
+                phone: formData.phone || 'N/A',
+                apartment: formData.apartment || 'Not specified',
+                message: formData.message
+            };
+            
+            window.emailjs.send(cfg.serviceId, cfg.templateId, templateParams)
+                .then(() => {
+                    showFormMessage('success', 'Thank you! Your message has been sent successfully. We will get back to you soon.');
+                    contactForm.reset();
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                    if (formMessage) {
+                        formMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    }
+                })
+                .catch(() => {
+                    // Fallback to mailto if EmailJS fails
+                    const subject = `New Contact Message from ${formData.name} - LuxeHaven`;
+                    const bodyLines = [
+                        `Name: ${formData.name}`,
+                        `Email: ${formData.email}`,
+                        `Phone: ${formData.phone || 'N/A'}`,
+                        `Facility: ${formData.apartment || 'Not specified'}`,
+                        '',
+                        'Message:',
+                        formData.message
+                    ];
+                    const mailtoLink = `mailto:luxehavenbnb@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
+                    window.location.href = mailtoLink;
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                });
+        } else {
+            // Fallback: open user's email client with prefilled message
+            const subject = `New Contact Message from ${formData.name} - LuxeHaven`;
+            const bodyLines = [
+                `Name: ${formData.name}`,
+                `Email: ${formData.email}`,
+                `Phone: ${formData.phone || 'N/A'}`,
+                `Facility: ${formData.apartment || 'Not specified'}`,
+                '',
+                'Message:',
+                formData.message
+            ];
+            const mailtoLink = `mailto:luxehavenbnb@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
+            window.location.href = mailtoLink;
             submitBtn.textContent = originalText;
             submitBtn.disabled = false;
-            
-            // Scroll to message
-            if (formMessage) {
-                formMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-            }
-        }, 1500);
+        }
     });
     
     // Validate Form
@@ -105,16 +152,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 5000);
     }
     
-    // Phone number formatting (optional)
+    // Phone number: enforce digits-only input (no characters)
     const phoneInput = document.getElementById('phone');
     if (phoneInput) {
         phoneInput.addEventListener('input', function(e) {
-            let value = e.target.value.replace(/\D/g, '');
-            if (value.length > 0) {
-                value = value.match(/.{1,3}/g).join('-');
-                if (value.length > 12) value = value.substr(0, 12);
-            }
-            e.target.value = value;
+            e.target.value = e.target.value.replace(/\D/g, '');
         });
     }
 });
